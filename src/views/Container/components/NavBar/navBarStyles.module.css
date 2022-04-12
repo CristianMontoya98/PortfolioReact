@@ -12,12 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 2rem;
+    padding-top: 3rem;
+    padding-right: 1rem;
   }
   
   .nav img {
-    height: 10rem;
-    
-    
+    height: 13rem;
   }
   
