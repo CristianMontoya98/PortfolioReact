@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import logo from '../../../../img/Logo.svg';
 import { ButtonMenu } from './components/ButtonMenu/buttonMenu';
+import { ItemsMenu } from './components/ItemsMenu/itemsMenu';
 import styles from './navBarStyles.module.css'
 function NavBar() {
     const [toggle,setToggle]  = useState(false);
@@ -12,18 +13,22 @@ function NavBar() {
     const handleClickItem = () => {
       setToggle(false);
     };
-  
+    
+  const hideNav = () => {
+    let prevScroll = window.pageYOffset;
+    window.onscroll = () => {
+
+     }
+  }
     return (
-        <nav>
-            <nav className={styles.nav}>
+        <nav className={styles.nav}>
+            
           <div className={styles.nav__top}>
           <img src={logo} alt="Cristian Montoya logo" />
-          <ButtonMenu handleClickMenu={handleClickMenu} iconActive={toggle ? "fi fi-br-cross" : "fi fi-br-align-right"} />
+          <ButtonMenu handleClickMenu={handleClickMenu} iconActive={toggle ? "fi fi-br-cross" : "fi fi-br-menu-burger"} />
           </div>
-      {/* <ItemsMenu show={toggle} handleClickItem={handleClickItem}/> */}
+      <ItemsMenu show={toggle} handleClickItem={handleClickItem}/>
       </nav>
-        
-        </nav>
     );
 }
 export { NavBar };
