@@ -1,0 +1,55 @@
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutText__title{
+  font-size: 4rem;
+  text-align: center;
+}
+.aboutText__title_dark{
+    color: var(--darkBlue);
+}
+.aboutText__subtitle{
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--gray);
+}
+.aboutText__text{
+    font-size: 1.8rem;
+    line-height: 5.5rem;
+    width: 80%;
+    text-align: center;
+    color: var(--gray);
+}
+.about__button{
+  width: auto;
+  padding:1.5rem;
+  height: 6rem;
+  font-size: 24px;  
+  border-radius: 1.5rem;
+  color: var(--white);
+  background: #036266;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.about__button span{
+    margin-right: 1.5rem;
+}
+.aboutImage{
+    width: 35rem;
+    margin-top: 5rem;
+}
+.aboutImage img{
+    width: 100%;
+}
+
