@@ -1,0 +1,17 @@
+.skills__container{
+    background: var(--blue);
+    padding-top: 5rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills__container h2{
+  font-size: 4rem;
+color: var(--white);
+  text-align: center;
+
+
+}

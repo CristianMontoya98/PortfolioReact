@@ -1,6 +1,7 @@
 import styles from "./AboutMeStyles.module.css";
 import rocket from "../../../../img/rocket.svg";
 function AboutMe() {
+  
   return (
     <section className={styles.aboutMe} id="about">
       <div className={styles.aboutText}>

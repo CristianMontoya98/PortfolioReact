@@ -1,0 +1,34 @@
+.skillsCard {
+    margin: 0;
+    border: solid 6px #055255;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin-bottom: 5em;
+    height: auto;
+    position: relative;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.skillsCard__title {
+    position: absolute;
+    top:-6.5rem;
+    background: var(--blue);
+    padding: 0.5rem;
+    color: var(--darkBlue);
+    font-size: 3.5rem;
+}
+.skillsCard__skill {
+    width: 15rem;
+}
+.skillsCard img {
+    width: 8rem;
+}
+.skillsCard__text {
+    color: var(--white);
+    font-size: 2rem;
+}
