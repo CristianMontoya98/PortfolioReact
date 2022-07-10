@@ -2,7 +2,7 @@ import styles from "./headerStyles.module.css";
 import down from '../../../../img/Down.svg';
 function Header() {
   return (
-    <section className={styles.header}>
+    <section className={styles.header} id="home">
       <div className={styles.header__filter}>
         <div className={styles.header__welcome}>
           <h1>Welcome to my portfolio</h1>

@@ -1,5 +1,5 @@
 import styles from "./itemsMenuStyles.module.css";
-import { Link } from "react-router-dom";
+
 /*ItemsMenu component, the elements of the menu wich are in the nav */
 function ItemsMenu(props) {
   const { show, handleClickItem } = props;
@@ -7,12 +7,12 @@ function ItemsMenu(props) {
   return (
     <div className={`${styles.menu} ${show ? styles.show : styles.hide}`}>
       <ul className={styles.menu__elements}>
-        <li onClick={() => handleClickItem()}>
-          {/* Links to the diferent routes define with react router in the container component */}
-          Home
-        </li>
+        {/* Links to the diferent routes define with react router in the container component */}
+        <a href="#home"><li onClick={() => handleClickItem()}>Home</li></a>
 
-        <li onClick={() => handleClickItem()}>About me</li>
+        <a href="#about">
+          <li onClick={() => handleClickItem()}>About me</li>
+        </a>
 
         <li onClick={() => handleClickItem()}>Skills</li>
 
